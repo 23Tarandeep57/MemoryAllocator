@@ -3,6 +3,7 @@
 #include <assert.h>
 #include <errno.h>
 #include <stdint.h>
+#include <stdlib.h>
 
 #define packed __attribute__((__packed__))
 #define unused __attribute__((__unused__))
