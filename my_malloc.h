@@ -29,7 +29,9 @@ typedef struct packed s_header header;
 #define reterr(x) do { errno = (x); return (void *)0; } while (0)
 #define findBlock(x) findBlock_((header*)memspace, x, 0)
 #define show() show_((header*) memspace) 
+#define coalesence() coalesence_((header*)memspace);
 
+private void coalesence_(header*);
 private bool nxtHeaderPrep(word, header*);
 public bool destroy(void*);
 private void show_(header*);
